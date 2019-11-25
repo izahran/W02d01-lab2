@@ -1,0 +1,83 @@
+// 1. Calculate the Cube
+
+
+function square (x) { return(x * x) };
+function cube (x) {
+  return(x * square(x));
+}
+console.log(calculateCube = cube(5));
+
+
+// 2. Is a Vowel?
+
+
+function isVowel(argument){
+var text;
+var argument = argument.toLowerCase();
+var vowels = (['a', 'e', 'i', 'o', 'u']);
+for (var i = 0; i <= vowels.length; i++){
+if (argument != vowels[i]) {
+continue;
+        }
+return true;
+    }
+return false;
+}
+var letr = "A";
+if (isVowel(letr)) {
+console.log("True");
+} else {
+console.log("False");
+}
+
+
+// 3. Get Two Lengths
+
+
+const getTwoLengths = (a, b) =>{
+ 	let newArray = []
+ 	newArray.push(a.length), newArray.push(b.length)
+ 	return newArray
+ };
+
+ getTwoLengths("two", "three");
+ {
+  console.log(getTwoLengths("Hank", "Hippopopalous")); 
+ }
+
+
+// 4. Get Multiple Lengths
+
+
+const getMultipleLengths = (oneWord) =>{
+ 	let newArray = [];
+ 	for(let i=0; i<oneWord.length; i++){
+ 		let a = oneWord[i].length;	
+ 	newArray.push(a)
+ 	}
+ 	return newArray
+ }
+ {
+   console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+ }
+
+
+ // 5. Maximum of Three Numbers
+
+ const maxOfThree = (num1, num2, num3) =>{
+ 	let x = ''
+ 	if(num1 >= num2 && num1 >= num3) {
+ 		x = num1;
+ 	} else if(num2 >= num1 && num2 >= num3) {
+ 		x = num2;
+ 	} else if(num3 >= num1 && num3 >= num2) {
+ 		x = num3;
+ 	}
+ return x;
+ }
+ {
+   console.log(maxOfThree(6, 9, 1));
+ }
+
+// HOMEWORK 5, 6 and 7
+
